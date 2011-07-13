@@ -1,0 +1,27 @@
+{
+	"name": "开心Title",
+	"version": "1.1",
+	"description": "标题处显示更新数",
+	"permissions": [
+		"http://*/*",
+		"https://*/*",
+		"tabs",
+		"notifications"
+	],
+	"content_scripts": [
+		{
+		"matches": [
+			"http://www.kaixin001.com/*"
+		],
+		"js": [
+			"lib/jquery-1.6.1.min.js",
+			"content_script_main.js"
+		]
+		}
+	],
+	"icons": {
+		"128": "img/icon128.png",
+		"16": "img/icon16.png",
+		"48": "img/icon48.png"
+	}
+}
